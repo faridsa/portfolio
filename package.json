@@ -1,0 +1,37 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "cross-env": "^5.1",
+        "laravel-mix": "^5.0.5",
+        "laravel-mix-purgecss": "^5.0.0",
+        "laravel-mix-tailwind": "^0.1.0",
+        "lodash": "^4.17.20",
+        "purgecss-webpack-plugin": "^2.3.0",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.26.11",
+        "sass-loader": "^8.0.0",
+        "tailwindcss": "^1.8.10",
+        "tailwindcss-plugins": "^0.3.0",
+        "vue": "^2.6.12",
+        "vue-router": "^2.7.0",
+        "vue-template-compiler": "^2.6.12",
+        "webpack-cli": "^3.3.12"
+    },
+    "dependencies": {
+        "alpinejs": "^2.7.0",
+        "aos": "^3.0.0-beta.6",
+        "axios": "^0.18",
+        "v-lazy-image": "^1.4.0",
+        "vue-infinite-loading": "^2.4.5",
+        "vue-resource": "^1.5.1"
+    }
+}
